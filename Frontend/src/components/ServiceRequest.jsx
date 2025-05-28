@@ -29,7 +29,8 @@ const ServiceRequestsApp = () => {
           return;
         }
 
-        const response = await axios.get(`${API_URL}/service-requests`);
+       const response = await axios.get(`${API_URL}/api/service-requests`);
+
         setRequests(response.data);
       } catch (error) {
         console.error("Error:", error);
